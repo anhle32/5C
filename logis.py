@@ -72,6 +72,8 @@ elif choice == 'Xây dựng mô hình':
     fig2=sns.heatmap(confusion_matrix, annot=True)
     st.pyplot(fig2.figure)
     he_so=model.coef_
+    he_so_chan=model.intercept_
+    st.code("he so chan trong mo hinh: " + str(he_so_chan))
     st.code("he so trong mo hinh: " + str(he_so))
 
 
