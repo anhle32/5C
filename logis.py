@@ -9,6 +9,9 @@ import streamlit as st
 from sklearn import metrics
 
 
+df = pd.read_csv('5c.csv', encoding='latin-1')
+
+
 st.title("ĐÁNH GIÁ RỦI RO TÍN DỤNG BẰNG MÔ HÌNH 5C")
 
 uploaded_file = st.file_uploader("Choose a file", type=['csv'])
